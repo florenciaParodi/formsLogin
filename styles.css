@@ -1,0 +1,194 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aquamarine;
+    font-size: 12px;
+}
+
+.welcome-bckground{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+    font-size: 45px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: aquamarine;
+    opacity: 35%;
+    text-shadow: 5px 5px rgb(255, 149, 234)
+}
+
+
+.form-container{
+    background-color: black;
+    color: white;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 5px 3px 20px 1px rgb(255, 149, 234), -5px 3px 20px 1px rgb(255, 149, 234);
+    overflow: hidden;
+
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.form-container .login-container{
+    width: 35%;
+    margin: 0 auto;
+}
+
+.form-container .login-container > h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-container .login-container > p,
+.form-container .login-container span{
+    text-align: center;
+    color: #999;
+    font-size: 10px;
+}
+
+.form-container .login-container > label{
+    display: block;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+.form-container .login-container input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: solid 1px #999;
+    border-radius: 5px;
+
+}
+
+.form-container .login-container input.input:focus{
+    outline: solid 2px rgb(172, 255, 227);
+
+}
+
+.form-container .login-container .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.form-container a{
+    color: aquamarine;
+    text-decoration: none;
+
+}
+
+.form-container a:hover{
+    text-decoration: underline;
+}
+
+/*.form-container a:visited{
+    color: rgb(18, 114, 82);
+} esto no me funcionó ya lo voy a solucionar*/
+
+.form-container .login-container .providers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.btn.btn-login{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.btn.btn-login:hover{
+    background-color: rgb(179, 255, 230);
+    color: rgb(255, 143, 233);
+    text-shadow: 2px 3px 2px white;
+}
+
+.btn.btn-facebook{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: solid 1px #999;
+}
+
+.btn.btn-facebook:hover{
+    background-color: rgb(255, 143, 233);
+    color: rgb(255, 255, 255);
+    
+}
+
+.btn.btn-google{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: solid 1px #999;
+}
+
+.btn.btn-google:hover{
+    background-color: rgb(255, 143, 233);
+}
+
+.btn.btn-twitter{
+    background-color: black;
+    color: white;
+    border: solid 1px #999;
+}
+
+.btn.btn-twitter:hover{
+    background-color: rgb(255, 143, 233);
+}
+
+.form-container .welcome-screen-container{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+}
+
+.form-container .welcome-screen-container > img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1025px){
+    .form-container{
+        width: 95%;
+    }
+
+    .form-container .welcome-screen-container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .form-container .welcome-screen-container{
+        display: none;
+    }
+
+    .form-container .login-container{
+        width: 70%;
+    }
+}
+
