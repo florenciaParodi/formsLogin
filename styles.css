@@ -193,7 +193,6 @@ body{
 }
 
 @media screen and (max-width: 595px){
-    .form-container .welcome-screen-container{
      body{
          overflow-x: hidden;
          overflow-y: hidden;
